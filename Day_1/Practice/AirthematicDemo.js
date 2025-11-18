@@ -111,5 +111,32 @@ function logNumber(x) {
     console.log("Received:", x);
 }
 
-let n = 10;
-logNumber(++n); 
+/**let n = 10;
+logNumber(++n); **/
+
+//const x= "test";
+//console.log(typeof(x));
+
+//const isData = (3 > 4) ? true : false;
+
+let nam="pradip"
+let name1="pradip"
+
+let samename=nam==name1 ? 'name is same':'name is not same';
+console.log(samename);
+
+let age =19;
+let vote= age>18? "you can vote":"you can not vote";
+console.log(vote);
+
+let ummer=18;
+let adult=ummer<16?'you are adult':'you are not adult';
+console.log(adult);
+
+let marks=36;
+let grade=marks<35? 'faild':'pass';
+console.log(grade);
+ 
+let color='red';
+let car=color==='red'? 'car is a good':'car is not good';
+color.log(car);
