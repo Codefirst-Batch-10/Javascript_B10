@@ -10,7 +10,7 @@
 // let result = text1 < text2 ;
 // console.log(result);
 
-//TERNARY OPERATORS
+//**********************************************************8TERNARY OPERATORS
 
 // let isLoggedin = true;
 // let result = x>=18 ? "Eligible for drive " : "Not eligible for drive";
@@ -23,7 +23,7 @@
 //     console.log("please login");
     
 // }
-/* ------------------compairison operator */
+/* -------------------------------------------------compairison operator */
 
 // let x1 = 10;
 // let x2 = '10';
@@ -87,15 +87,16 @@
 // console.log(x1 & x2);
 
 
-var test1 = true;
-var test2 = false;
+// var test1 = true;
+// var test2 = false;
 
 
-console.log(test1 && test2);
+// console.log(test1 && test2);
 
-console.log(test1 || test2);
+// console.log(test1 || test2);
 
-console.log(!test2);
+// console.log(!test2);
+
 
 
 
