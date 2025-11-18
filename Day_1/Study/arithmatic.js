@@ -26,9 +26,8 @@ console.log(inc1, dec1);
 
 console.log(!true);
 
-const x= "test";
-console.log(typeof(x));
+const x = "test";
+console.log(typeof x);
 
-const isData = (3 > 4) ? true : false;
-
-
+const isData = 3 > 4 ? true : false; // ternary operator
+console.log(isData);

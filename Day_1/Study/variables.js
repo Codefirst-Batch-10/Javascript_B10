@@ -7,7 +7,7 @@ const six = { name: 'CTS', age: 25 };
 var seven = undefined;
 // console.log(seven);
 var ABC = 52;
-
+    
 var add = 5+5;
 // console.log(add);
 
