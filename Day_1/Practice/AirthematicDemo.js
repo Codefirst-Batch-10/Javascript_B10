@@ -136,7 +136,12 @@ console.log(adult);
 let marks=36;
 let grade=marks<35? 'faild':'pass';
 console.log(grade);
- 
-let color='red';
-let car=color==='red'? 'car is a good':'car is not good';
-color.log(car);
+
+
+let number1=12;
+let number2=14;
+let addition=number1+number2;
+let substractio=number1+number2;
+let multipli=number1*number2;
+let modul=number1*number2;
+console.log(addition,substractio,multipli,modul);
