@@ -119,33 +119,3 @@ logNumber(++n); **/
 
 //const isData = (3 > 4) ? true : false;
 
-let nam="pradip"
-let name1="pradip"
-
-let samename=nam==name1 ? 'name is same':'name is not same';
-console.log(samename);
-
-let age =19;
-let vote= age>18? "you can vote":"you can not vote";
-console.log(vote);
-
-let ummer=18;
-let adult=ummer<16?'you are adult':'you are not adult';
-console.log(adult);
-
-let marks=36;
-let grade=marks<35? 'faild':'pass';
-console.log(grade);
-
-
-let number1=12;
-let number2=14;
-let addition=number1+number2;
-let substractio=number1+number2;
-let multipli=number1*number2;
-let modul=number1*number2;
-console.log(addition,substractio,multipli,modul);
-
-let stuname='pradip'
-let stu=stuname;
-console.log(stu);
