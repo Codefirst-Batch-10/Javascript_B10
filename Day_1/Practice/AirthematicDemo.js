@@ -145,3 +145,7 @@ let substractio=number1+number2;
 let multipli=number1*number2;
 let modul=number1*number2;
 console.log(addition,substractio,multipli,modul);
+
+let stuname='pradip'
+let stu=stuname;
+console.log(stu);
