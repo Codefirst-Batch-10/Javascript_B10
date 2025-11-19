@@ -18,6 +18,16 @@ let division = (a, b) => a / b;
 async function fetchDataa() {
   let req = await fetch("https://github.com/");
   //   let res = await req.json();
+  console.log("time interval is running");
 }
 
-fetchDataa();
+// fetchDataa();
+// let newdo = []
+// const doubled = () => {
+//   for (let i = 0; i < nums.length; i++) {
+//     newdo[i] = nums[i] * 2;
+//   }
+//   console.log(newdo); // [2,4,6]
+// };
+
+// doubled();

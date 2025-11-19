@@ -9,9 +9,10 @@ var test2 = 35;
 // (5+5) ? 11: 10;
 
 var test3 = 50;
-var test4 = 50;
+var test4 = 5;
 
 var result = test3 == test4 ? "Both are equal" : "Both are not equal";
+console.log(result);
 
 // console.log(result);
 

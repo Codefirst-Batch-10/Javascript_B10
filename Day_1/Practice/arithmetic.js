@@ -1,5 +1,5 @@
-let first = 30;
-let second = 3;
+first = 30;
+second = 3;
 
 console.log("additions is " + (first + second));
 console.log("substraction is " + (first - second));
