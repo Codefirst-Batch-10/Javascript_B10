@@ -4,7 +4,7 @@ function calculate(op) {
       const b = parseFloat(document.getElementById('num2').value);
       let res;
 
-      // ऑपरेशन तपासणे
+      
       switch (op) {
         case '+':
           res = a + b;
