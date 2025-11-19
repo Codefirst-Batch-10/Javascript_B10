@@ -115,6 +115,11 @@ let result = (num % 2 === 0) ? "Even" : "Odd";
 console.log(result); // Odd
 
 
+let mark = 85;
+let grade = (mark >= 90) ? "A+" : (mark >= 75) ? "A" : (mark >= 50) ? "B" : "Fail";
+console.log(grade); //
+
+
 //------------------------------------------------------------------------------------
 
 
