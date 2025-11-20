@@ -1,6 +1,5 @@
+/** 
 let marks=prompt("enter your marks");
-
-
 if(marks>=90)
 {
 console.log("Grade=A++");
@@ -26,4 +25,12 @@ else if(marks>=35)
 }
 else{
     console.log("fail")
+}
+**/
+let age=prompt("enter your age")
+if(age>18){
+    console.log('you are elagible for voting')
+}
+else{
+    console.log("you are not elagible for voting")
 }
