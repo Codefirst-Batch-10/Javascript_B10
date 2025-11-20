@@ -109,7 +109,17 @@ function minor() {
 
 // console.log(arr);
 
-console.log("A");
-setTimeout(() => console.log("B"), 0);
-Promise.resolve().then(() => console.log("C"));
-console.log("D");
+// console.log("A"); 1
+// setTimeout(() => console.log("B"), 0); 4
+// Promise.resolve().then(() => console.log("C")); 3
+// console.log("D"); 2
+
+function greet(name) {
+  console.log("Hello " + name);
+}
+
+function user(callback) {
+  callback("Krishaa");
+}
+
+user(greet);
