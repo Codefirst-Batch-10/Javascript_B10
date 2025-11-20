@@ -1,6 +1,17 @@
 // Data types
 
-//
+//String
+let str1 = "Bharat maza desh ahe ";
+let str2 = "Ani Pakistan murdabad";
+
+// let addedStr = str1.concat(str2);
+// console.log(addedStr);
+
+// let res = str1.slice(2, 4);
+// console.log(res);
+
+let res = str1.substring(0, 4);
+console.log(res.toUpperCase());
 
 // Boolean
 
