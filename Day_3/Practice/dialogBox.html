@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DialogBoxes</title>
+    <script>
+        function showAlert(){
+            alert('Are u sure u want to continue');
+            console.log("The alert has been called");
+            
+        }
+        function showConfirm(){
+            var conRes=confirm('Are u sure u want to continue');
+            console.log(conRes);
+            if(conRes==true){
+                console.log('U have entered the right loop');
+                
+            }else{
+            console.log('U have entered the wrong loop');
+            }
+        }
+        function showPrompt(){
+            var promRes=prompt('Please enter your correct age');
+            console.log(promRes);
+            if(promRes>=18){
+                console.log("U are eligible to visit the application");
+                
+            }else{
+                console.log("U are not eligible to visit the application");
+                
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <h1>A 
+B
+C
+D
+E
+    </h1>
+
+    <button onclick="showAlert()">Alert</button><br><hr>
+    <button onclick="showConfirm()">Confirm</button><br><hr>
+    <button onclick="showPrompt()">Prompt</button>
+</body>
+</html>

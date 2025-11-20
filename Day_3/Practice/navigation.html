@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Form</title>
+    <script>
+        function showAlrt(){
+            alert('Are u sure u want to continue');
+            console.log("hello is alerted");
+            
+        };
+        function onSubm() {
+            console.log("hello");
+
+            function showPrmpt() {  
+                var a = prompt("Enter your age:");
+                if (a >= 18) {
+                    window.location = "https://3.bp.blogspot.com/-mvYoo25Y9OU/VzhDDQCrT8I/AAAAAAAAIKA/l0CIiqq_LacxUQxJjdRlHo7pS14LC8ULACKgB/s1600/samantha46.jpg";
+                } else {
+                    window.location = "https://img.rgstatic.com/content/show/de178b38-1a3b-41e6-9874-9f0498a693d7/backdrop-1920.jpg";
+                }
+            }
+
+            showPrmpt();
+        }
+    </script>
+</head>
+<body>
+    <h4>Navigation Form JS and Prompt</h4>
+    <button onclick="showAlrt()">Alert</button><br><hr>
+    <button onclick="onSubm()">Navigate</button>
+</body>
+</html>
