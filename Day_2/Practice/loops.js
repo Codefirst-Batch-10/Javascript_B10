@@ -21,4 +21,4 @@ for(let i=0;i<marks.length;i++)
 total +=marks[i];
 }
 let average=total/marks.length;
-console.log("Average=",average)
+console.log("Average=",average);
