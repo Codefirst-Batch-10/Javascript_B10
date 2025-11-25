@@ -16,7 +16,7 @@ else {
 }**/
 
 
-let color;
+/**let color;
 
 if(mode==="dark"){
     color="black";
@@ -27,4 +27,13 @@ if(mode==="dark"){
 }else{
     color="white"
 }
-console.log(color);
+console.log(color);**/
+let num=prompt("enter a number");
+
+if(num%2===0){
+    console.log(num,"number is muliploy by2")
+}
+else {
+    console.log("num is not mulitple by 5")
+}
+
