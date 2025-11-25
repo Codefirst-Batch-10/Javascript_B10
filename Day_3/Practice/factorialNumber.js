@@ -14,3 +14,17 @@ if(number==0)
     console.log(`factorial of ${number} is ${fact}` )
 }
 }
+
+/**function factorialrecursive(n){
+    if(!Number.isInteger(n)||n<0)
+    {
+        throw new console.error("facotrial give the non negative interge");
+        
+    }
+    if(n===0||n===1)
+        return 1;
+
+    return n * factorialrecursive(n-1);
+
+}
+console.log(factorialrecursive(10));**/
