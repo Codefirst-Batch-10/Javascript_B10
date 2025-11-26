@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure Examples</title>
+    <script>
+        function prg(){
+            console.log('hello this is my first function');
+            rbb();
+        }
+
+        function rbb(){
+            console.log('this is from second function');
+        }
+        prg();
+
+        function updCounter(){
+            let Counter1=1;
+            Counter1++;         // prints 2 everytime as it does not remember value of counter
+            console.log(Counter1);
+            
+        }
+
+        var updCounter1= (function(){
+            var counter=0;
+            return function(){
+                counter++;     // prints 1,2,3 because of closure it remembers value of counter
+                console.log(counter);
+                
+            }
+        }());
+
+    </script>
+</head>
+<body>
+    <h2>Closure</h2>
+
+    <button onclick="updCounter1()">Counter1 - prints 1,2,3</button><hr>
+    <button onclick="updCounter()">Counter - prints 2,2,2</button>
+</body>
+</html>
