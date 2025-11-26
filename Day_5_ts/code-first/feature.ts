@@ -47,7 +47,7 @@ const copyArr = [...arr2];
 
 // Rest 
 let sum = (...numbers:any) => {
-     numbers.reduce((intial, cumm)=>{
+     numbers.reduce((intial: any, cumm: any)=>{
         return intial + cumm;
      },0);
 }
