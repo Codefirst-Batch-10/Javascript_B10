@@ -1,7 +1,7 @@
 // Data types
 
 //String
-let str1 = "Bharat maza desh ahe ";
+let str1 = "Sare jahan se achhya hindustan";
 let str2 = "Ani Pakistan murdabad";
 
 // let addedStr = str1.concat(str2);
@@ -11,7 +11,7 @@ let str2 = "Ani Pakistan murdabad";
 // console.log(res);
 
 let res = str1.substring(0, 4);
-console.log(res.toUpperCase());
+// console.log(res.toUpperCase());
 
 // Boolean
 
@@ -143,3 +143,39 @@ let arr = ["nitin", "kunal", "kk", "shubz", "dips", "viabz"];
 // }, 0);
 
 // console.log(res);
+
+// Kadane's algorithm - returns the largest contiguous subarray sum
+function maxSubArrayWithIndices(nums) {
+  if (!nums || nums.length === 0) return { sum: 0, subarray: [] };
+
+  let currentMax = nums[0],
+    globalMax = nums[0];
+  let start = 0,
+    tempStart = 0,
+    end = 0;
+
+  for (let i = 1; i < nums.length; i++) {
+    if (nums[i] > currentMax + nums[i]) {
+      currentMax = nums[i];
+      tempStart = i;
+    } else {
+      currentMax += nums[i];
+    }
+
+    if (currentMax > globalMax) {
+      globalMax = currentMax;
+      start = tempStart;
+      end = i;
+    }
+  }
+
+  return {
+    sum: globalMax,
+    subarray: nums.slice(start, end + 1),
+  };
+}
+
+// Example
+const arr2 = [-2, 1, -3, 4, -1, 2, 1, -5, 4];
+console.log(maxSubArrayWithIndices(arr2));
+// { sum: 6, subarray: [4, -1, 2, 1] }

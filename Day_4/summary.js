@@ -14,14 +14,13 @@
 // concat: add mutliple string at single point
 // length
 // replace ==> replace otherwise print string as it is.
-// indexOf ==> 
-//search ===> 
+// indexOf ==>
+//search ===>
 // charCodeAt
 //lastIndexOf
 //valueOf
 // var test3 = 'CTS Pune';
 // test3.split('').reverse().join('');
-
 
 // Arrays:
 // push==> add end of array
@@ -35,4 +34,4 @@
 // concat
 // map ==> perform operation on each ele of array.
 // filter ===> perorfm operation on each ele and return those elements which satisfies the condition.
-// reduce 
+// reduce

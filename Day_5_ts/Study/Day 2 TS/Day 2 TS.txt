@@ -1,0 +1,26 @@
+Spread :
+
+Spread is used to work on individual or combinaltion of array or object element.
+can work on array or object or both at a time.
+
+Object.assign: create new object of parrms.
+Oject.is: determines the values are same or not.
+
+Class:
+
+Class is a blue print for creating objects.
+class consist of :
+methods and propertis
+
+
+TS:
+TS is superset of JS.
+TS is combination old JS + ES6 + some additional features.
+TS was developed by Microsoft by Anders Hejlsberg.
+angular 2 and all above versions are using this language.
+TS is compilation language means we can check the error prior to execution of code.
+TS is stictly typed language  but JS is loosely typed language.
+TS supports all OOP's concepts but doesn't support by JS.
+When we write our code in TS we need to compile down to JS then we can run the JS code. ===> Transpilation process.
+It is portabble ===> any env or any OS.
+we need to install typescript to run the TS files.

@@ -1,26 +1,25 @@
 // Clousure
 
-function outer () {
-    let counter = 0;
-    if(counter == 0) {
-        return;
-    } else {
-        console.log('Api call');
-    }
-    // num--;
-    // console.log(num);
-    function inner() {
-        counter++;
-        console.log(counter);
-    }
-    inner();
-    return true
+function outer() {
+  let counter = 0;
+  if (counter == 0) {
+    return;
+  } else {
+    console.log("Api call");
+  }
+  // num--;
+  // console.log(num);
+  function inner() {
+    counter++;
+    console.log(counter);
+  }
+  inner();
+  return true;
 }
 let add = outer();
 console.log(add);
 
-
-// Promises : 
+// Promises :
 
 // let orderProduct = new Promise((resolve,reject)=>{
 //     let data = false;
@@ -32,7 +31,6 @@ console.log(add);
 // })
 // orderProduct.then(response=> console.log(response))
 // .catch(error=> console.log(error));
-
 
 // function fetchProducts() {
 //   return new Promise((resolve, reject) => {
@@ -57,33 +55,32 @@ console.log(add);
 //   })
 //   .catch(error => console.log(error));
 
-
 // Async/await
 
 function delivery() {
-    return new Promise((resolve,reject)=>{
-        setTimeout(() => {
-          resolve('product delivered');
-        }, 3000);
-    })
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("product delivered");
+    }, 3000);
+  });
 }
 
 function payment() {
-    return new Promise ((resolve, reject)=>{
-       setTimeout(() => {
-         resolve('payment success');
-       }, 5000);
-   })
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve("payment success");
+    }, 5000);
+  });
 }
 
 function orderPlaced() {
-    console.log('orderPlaced');
-    // payment();
-    let pay =  payment();
-    console.log(pay);
-    // delivery();
-    let del = delivery();
-    console.log(del);
-    console.log('Product Received');
+  console.log("orderPlaced");
+  // payment();
+  let pay = payment();
+  console.log(pay);
+  // delivery();
+  let del = delivery();
+  console.log(del);
+  console.log("Product Received");
 }
 orderPlaced();

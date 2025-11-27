@@ -23,46 +23,45 @@ Fulfilled → success (resolved).
 Rejected → failed (error).
  */
 
-let orderProduct = new Promise((resolve,reject)=>{
-   let fetchData =  true;
-   if(fetchData) {
-    resolve('order placed');
-   } else {
-    reject('No order placed!')
-   }
+let orderProduct = new Promise((resolve, reject) => {
+  let fetchData = true;
+  if (fetchData) {
+    resolve("order placed");
+  } else {
+    reject("No order placed!");
+  }
 });
-orderProduct.then(response => console.log(response));
-orderProduct.catch(error => console.log(errq));
-
+orderProduct.then((response) => console.log(response));
+orderProduct.catch((error) => console.log(errq));
 
 function fetchProducts() {
   return new Promise((resolve, reject) => {
     fetch(`https://fakestoreapi.com/products/${10}`)
-      .then(response => {
+      .then((response) => {
         if (response.ok) {
           return response.json();
         } else {
           reject("Failed to fetch products!");
         }
       })
-      .then(data => resolve(data))
-      .catch(error => reject("Error: " + error));
+      .then((data) => resolve(data))
+      .catch((error) => reject("Error: " + error));
   });
 }
 
 fetchProducts()
-  .then(products => {
+  .then((products) => {
     console.log("Products received!");
     console.log(products);
   })
-  .catch(error => console.log(error));
+  .catch((error) => console.log(error));
 
 /* Async / Await
 Instead of using .then(), we “wait” for a promise result inside an async function.
 - async/await cannot work without Promises.
  */
 function fetchData() {
-  return new Promise(resolve => {
+  return new Promise((resolve) => {
     setTimeout(() => {
       resolve("Data received!");
     }, 2000);
@@ -73,17 +72,17 @@ async function getData() {
   console.log("Fetching...");
   const data = await fetchData(); // wait until resolved
   console.log(data);
-  console.log('wait until get data');
+  console.log("wait until get data");
 }
 
 getData();
 
 function fetchData() {
-    return new Promise ((resolve)=>{
-        setTimeout(() => {
-          resolve("Data received!");
-        }, 2000);
-    })
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve("Data received!");
+    }, 2000);
+  });
 }
 
 async function getData() {
@@ -91,7 +90,7 @@ async function getData() {
   const value = await fetchData();
   console.log(value);
   const data = await fetchData(); // wait until resolved
-  console.log('data==>',data);
-  console.log('wait until get data');
+  console.log("data==>", data);
+  console.log("wait until get data");
 }
 getData();
