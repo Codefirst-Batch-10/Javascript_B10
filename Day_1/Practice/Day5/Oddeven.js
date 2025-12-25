@@ -17,4 +17,10 @@ function turnary(a){
 }
 console.log(turnary(13))
 
+function turn(a){
+    let sum=a%2==0? "evern":"ood"
+console.log(sum)
+}
+turn(24)
+
 
